@@ -1,0 +1,19 @@
+// Animated counter
+let counter = document.getElementById('plastic-counter');
+let target = 1250; // Start with a realistic number (update via backend later)
+let speed = 100; // Animation speed
+
+const updateCounter = () => {
+  let count = 0;
+  let increment = target / speed;
+  let timer = setInterval(() => {
+    count += increment;
+    counter.innerText = Math.floor(count);
+    if (count >= target) {
+      clearInterval(timer);
+      counter.innerText = target + "+";
+    }
+  }, 10);
+};
+
+updateCounter();

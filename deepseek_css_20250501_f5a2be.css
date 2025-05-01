@@ -1,0 +1,45 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.hero {
+  background: url('../images/hero-surfer.jpg') no-repeat center/cover;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.cta-button {
+  background: #2A9D8F;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.counter {
+  text-align: center;
+  padding: 50px 0;
+  background: #F8F9FA;
+}
+
+#plastic-counter {
+  font-size: 3em;
+  font-weight: bold;
+  color: #264653;
+}
+
+.value-props {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+  text-align: center;
+}
